@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*estilo menu*/
+.cabeza {
+    background-color: #54345f;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* Listas */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Margen ítems de lista */
+.navbar ul li {
+    margin: 10px 10px; 
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: #d3b6d1;
+    display: block;
+    text-decoration: none;
+}
+/* interacción al pasar el cursor */
+.navbar ul li a:hover {
+    background-color: rgba(66, 26, 64, 0.377); 
+}
+
+/*fin menu*/
+
+/*estilo cabeza2*/
+.cabeza2 {
+    background-color: #e4b2ee;
+    background-size: 100% 250%;
+    background-position: top center;
+    margin: 0;
+    padding-top: 1%;
+    }
+
+/* Encabezados centrados */
+.texto_centrado {
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    color: #54345f;
+}
+
+/* Línea horizontal */
+.line {
+    margin: 20px auto;
+    width: 50%; 
+    border: 1px solid #3b2842;
+}
+/*fin cabeza2*/
+
+
+/*img. fondo body*/
+.abajo {
+    background-image: url('../images/fondo1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10%;  
+}
+/*fin fondo body*/
+
+
+/*rectángulo detras del contenido*/
+.contenedor_seccion {
+    background-color: rgba(17, 16, 16, 0.8);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+}
+/*fin rectángulo*/
+
+/* Estilos para la sección */
+.seccion {
+    margin: 20px 0;
+}
+
+/* Estilos para listas */
+ul li  {
+    margin: 20px 0;
+}
+ul li a:hover {
+    background-color: rgba(66, 26, 64, 0.377);
+} 
+
+ul li {
+    display: inline; 
+    margin-right: 1px;
+}
+.proyecto {
+    color: #d0afe6;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    }
+.año {
+    color: #b6e49b;
+    display: inline-block;
+   
+}
+
+
+/* Encabezados de secciones */
+#sobre_mi, #experiencia, #proyectos, #contacto {
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 1px 30px;
+    padding: 3px;
+    color: #b6e49b;
+}
+
+p{
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #ddeead;
+}
+
