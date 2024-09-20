@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <!-- Epilogue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>Erika Plachicoff</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header class="cabeza">
+    <header>
         <div class="content">
             <div class="menu container">
                 <nav class="navbar">
+                    <img src="images/icono.desarrollo.png" alt="icono desarrollo web" class="navbar-icon"> 
+
                     <ul>
                         <li><a href="index.html">Inicio</a></li> 
                         <li><a href="HTML/aboutme.html">Sobre mí</a></li> 
@@ -22,42 +34,100 @@
             </div>
         </div>
     </header>
-    <div class="cabeza2">
-        <h1 class="texto_centrado">ERIKA PLACHICOFF</h1>
-        <h2 class="texto_centrado">Estudiante de Jóvenes a Programar</h2>
-        <hr class="line">
-        <br>
+    <div class="portada">
+        <h1 class="texto_centrado" id="name">ERIKA PLACHICOFF</h1>
+        <div class="container-flex">
+            <img src="images/elemTaza1.png" alt="taza azul centrada entre corchetes naranja que simulan ser etiquetas de un elemento HTML" class="mi-imagen">
+            <div class="texto-descripcion">
+                <h2 class="texto_centrado" id="description">Estudiando Desarrollo Web</h2>
+                <p id="ceibal">Jóvenes a Programar - Ceibal</p>
+            </div>
+        </div>
+        <img src="images/barra.png" alt="1rectángulo de color naranja, 1 azul y otro naranja, puestos de manera horizontal" id="barra">
     </div>
     <div class="abajo">
         <div class="contenedor_seccion">
             <div class="seccion" id="sobre_mi">
-                <h3>Sobre mí</h3>
-                <p>Soy Erika Plachicoff, estudiante apasionada por el desarrollo web con un enfoque en la creatividad y la funcionalidad.</p>
-                <p>Dentro de la programación, busco combinar mi pasión por el arte y la lógica.</p>
-                <p>Actualmente, estoy perfeccionando mis habilidades en desarrollo web, enfocándome en HTML, CSS y JavaScript, y disfruto aplicando estos conocimientos para crear experiencias digitales únicas y efectivas.</p>
+                <div class="contenido_sobre_mi">
+                    <h3>Sobre mí</h3>
+                    <span class="parrafo">Estudiante apasionada por el desarrollo web con un enfoque en la creatividad y la funcionalidad. Dentro de la programación, busco combinar mi pasión por el arte y la lógica. Actualmente, estoy perfeccionando mis habilidades en desarrollo web, enfocándome en HTML, CSS y JavaScript, y disfruto aplicando estos conocimientos para crear experiencias digitales únicas, efectivas y creativas.</span>
+                </div>
+                <img src="images/imgErikaP.png" alt="retrato abstracto Erika Plachicoff" class="imagen">
             </div>
+            <br><br>
+
+            <!-- Sección de Proyectos con Cards -->
+            <div class="seccion" id="proyectos">
+                <h3 id="proyectTitle">Proyectos</h3>
+                <hr class="line1">
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card card-right">
+                        <img src="images/paraCards.png" alt="Imagen Proyecto 1" class="card-image">
+                        <div class="card-content">
+                            <h4>Proyecto 1</h4>
+                            <p>Descripción breve del proyecto 1.</p>
+                            <a href="https://www.example.com" target="_blank" class="proyecto">Ver más</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card card-left">
+                        <img src="images/paraCardsOjo.png" alt="Imagen Proyecto 2" class="card-image">
+                        <div class="card-content">
+                            <h4>Proyecto 2</h4>
+                            <p>Descripción breve del proyecto 2.</p>
+                            <a href="https://www.example.com" target="_blank" class="proyecto">Ver más</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card card-right">
+                        <img src="images/paraCardsPie.png" alt="Imagen Proyecto 3" class="card-image">
+                        <div class="card-content">
+                            <h4>Proyecto 3</h4>
+                            <p>Descripción breve del proyecto 3.</p>
+                            <a href="https://www.example.com" target="_blank" class="proyecto">Ver más</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card card-left">
+                        <img src="images/paraCardsMano.png" alt="Imagen Proyecto 4" class="card-image">
+                        <div class="card-content">
+                            <h4>Proyecto 4</h4>
+                            <p>Descripción breve del proyecto 4.</p>
+                            <a href="https://www.example.com" target="_blank" class="proyecto">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <br><br>
             <div class="seccion" id="experiencia">
-                <h3>Experiencia</h3>
-                <p>Acá va una breve introducción de mi experiencia.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere urna non neque bibendum accumsan. Praesent finibus maximus sem id vulputate. Curabitur in tincidunt tellus.</p>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent aliquet neque en nulla molestie auctor. Habitante pellentesque morbi tristique senectus et netus et.</p>
+                <div class="grid-experiencia">
+                    <img src="images/ladder.png" alt="diseño de escalera ascendente" class="imagen">
+                    <div class="contenido_experiencia">
+                        <h3>Experiencia</h3>
+                        <span class="parrafo">
+                            Mi trayectoria en atención al cliente y educación infantil me ha brindado habilidades clave como resolución de problemas, trabajo en equipo y adaptabilidad.
+                            Actualmente, estoy enfocada en el desarrollo web a través del programa "Jóvenes a Programar - Ceibal", donde he adquirido conocimientos en HTML, CSS y JavaScript.
+                            Estoy aplicando estos conceptos en proyectos personales, creando soluciones responsivas y accesibles.
+                            Mi formación refleja mi pasión por el aprendizaje continuo y mi compromiso con el crecimiento en el área de TI.
+                        </span>
+                    </div>
+                </div>
             </div>
-            <br><br>
-            <div class="seccion" id="proyectos">
-                <h3>Proyectos</h3>
-                <ul>
-                    <li><a href="https://www.example.com" target="_blank" class="proyecto">Lorem ipsum</a> <span class="año">- 2024</span></li>
-                    <br>
-                    <li><a href="https://www.example.com" target="_blank" class="proyecto">Lorem ipsum</a> <span class="año">- 2024</span></li>
-                </ul>
-            </div>
+
             <br><br>
             <div class="seccion" id="contacto">
                 <h3>Contacto</h3>
-                <p>Estos son mis contactos</p>
+                <span class="parrafo">Puedes contactarme a través de mi correo electrónico:</span><br>
+                <a href="mailto:erikaplachicoff@gmail.com" class="correo-icono">
+                    <i class="fas fa-envelope"></i> erikaplachicoff@gmail.com
+                </a>
             </div>
             <br><br>
+            <div id="element">
+                <img src="images/elemTaza2.png" alt="Representación gráfica de un corchete de apertura y cierre simulando una etiqueta HTML, con una taza azul en el centro" id="tazaCierre">
+            </div>
         </div>
     </div>
 </body>
