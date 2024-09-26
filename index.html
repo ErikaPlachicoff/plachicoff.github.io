@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Erika Plachicoff</title>
@@ -18,42 +19,47 @@
 </head>
 <body>
     <header>
-        <div class="content">
-            <div class="menu container">
-                <nav class="navbar">
-                    <img src="images/icono.desarrollo.png" alt="icono desarrollo web" class="navbar-icon"> 
+        <img src="images/icono.desarrollo.png" alt="icono desarrollo web" class="img-fluid" id="navbar-icon"> 
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+      <nav class="navbar" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
 
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li> 
-                        <li><a href="#sobre_mi">Sobre mí</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>  
-                        <li><a href="#experiencia">Experiencia</a></li> 
-                        
-                        <li><a href="#contacto">Contacto</a></li> 
-                    </ul>
-                </nav>
-            </div>
-        </div>
+             <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li> 
+                <li><a href="#sobre_mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>  
+                <li><a href="#experiencia">Experiencia</a></li> 
+                
+                <li><a href="#contacto">Contacto</a></li> 
+                
+            </ul>
+                       
+     </nav>
+    
     </header>
     <div class="portada">
-        <h1 class="texto_centrado" id="name">ERIKA PLACHICOFF</h1>
+        <h1 id="name">ERIKA PLACHICOFF</h1>
         <div class="container-flex">
-            <img src="images/elemTaza1.png" alt="taza azul centrada entre corchetes naranja que simulan ser etiquetas de un elemento HTML" class="mi-imagen">
+            <img src="images/elemTaza1.png" alt="taza azul centrada entre corchetes naranja que simulan ser etiquetas de un elemento HTML" class="img-fluid" id="mi-imagen">
             <div class="texto-descripcion">
                 <h2 class="texto_centrado" id="description">Estudiando Desarrollo Web</h2>
                 <p id="ceibal">Jóvenes a Programar - Ceibal</p>
             </div>
         </div>
-        <img src="images/barra.png" alt="1rectángulo de color naranja, 1 azul y otro naranja, puestos de manera horizontal" id="barra">
+        <img src="images/barra.png" alt="1rectángulo de color naranja, 1 azul y otro naranja, puestos de manera horizontal" class="img-fluid" id="barra">
     </div>
-    <div class="abajo">
+
         <div class="contenedor_seccion">
             <div class="seccion" id="sobre_mi">
                 <div class="contenido_sobre_mi">
                     <h3>Sobre mí</h3>
-                    <span class="parrafo">Estudiante apasionada por el desarrollo web con un enfoque en la creatividad y la funcionalidad. Dentro de la programación, busco combinar mi pasión por el arte y la lógica. Actualmente, estoy perfeccionando mis habilidades en desarrollo web, enfocándome en HTML, CSS y JavaScript, y disfruto aplicando estos conocimientos para crear experiencias digitales únicas, efectivas y creativas.</span>
+                    <span class="parrafo">Estudiante apasionada por el desarrollo web con un enfoque en la creatividad y la funcionalidad. 
+                        Dentro de la programación, busco combinar mi pasión por el arte y la lógica. 
+                        Actualmente, estoy perfeccionando mis habilidades en desarrollo web, enfocándome 
+                        en HTML, CSS y JavaScript, y disfruto aplicando estos conocimientos para crear 
+                        experiencias digitales únicas, efectivas y creativas.</span>
                 </div>
-                <img src="images/imgErikaP.png" alt="retrato abstracto Erika Plachicoff" class="imagen">
+                <img src="images/imgErikaP.png" alt="retrato abstracto Erika Plachicoff" class="img-fluid" id="imagen">
             </div>
             <br><br>
 
@@ -103,10 +109,12 @@
 
             <br><br>
             <div class="seccion" id="experiencia">
+                 <h3 class="titulo-experiencia">Experiencia</h3>
+                 <hr class="line1">
                 <div class="grid-experiencia">
-                    <img src="images/ladder.png" alt="diseño de escalera ascendente" class="imagen">
+                    <img src="images/ladder.png" alt="diseño de escalera ascendente" class="img-fluid"id="imagen">
                     <div class="contenido_experiencia">
-                        <h3>Experiencia</h3>
+                        <h3 class="titulo-experiencia-grande">Experiencia</h3>
                         <span class="parrafo">
                             Mi trayectoria en atención al cliente y educación infantil me ha brindado habilidades clave como resolución de problemas, trabajo en equipo y adaptabilidad.
                             Actualmente, estoy enfocada en el desarrollo web a través del programa "Jóvenes a Programar - Ceibal", donde he adquirido conocimientos en HTML, CSS y JavaScript.
@@ -116,7 +124,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <br><br>
             <div class="seccion" id="contacto">
                 <h3>Contacto</h3>
@@ -127,9 +135,10 @@
             </div>
             <br><br>
             <div id="element">
-                <img src="images/elemTaza2.png" alt="Representación gráfica de un corchete de apertura y cierre simulando una etiqueta HTML, con una taza azul en el centro" id="tazaCierre">
+                <img src="images/elemTaza2.png" alt="Representación gráfica de un corchete de apertura y cierre simulando una etiqueta HTML, con una taza azul en el centro" class="img-fluid" id="tazaCierre">
             </div>
         </div>
-    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
